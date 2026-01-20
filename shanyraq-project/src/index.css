@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary font-body text-text-primary;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  /* Shanyraq баннері үшін арнайы градиент */
+  .gradient-shanyraq {
+    background: linear-gradient(135deg, #002F6C 0%, #004C99 50%, #C9A64D 100%);
+  }
+
+  /* Hover эффекті - алтын түске өту */
+  .hover-gold {
+    @apply transition-colors duration-300 hover:text-accent;
+  }
+
+  /* Premium стиль үшін card */
+  .card-premium {
+    @apply bg-primary-light/20 backdrop-blur-sm border border-accent/30 rounded-lg shadow-xl;
+  }
+}

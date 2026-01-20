@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "clubs": "Kulüpler",
+    "calendar": "Takvim",
+    "media": "Medya",
+    "contact": "İletişim"
+  },
+  "home": {
+    "title": "HKTU Öğrenci Kulüpleri",
+    "subtitle": "Bir Çatı Altında - Birçok Kulüp",
+    "description": "Tüm öğrenci kulüplerini tek platformda birleştirerek faaliyetlerini tanıtıyoruz",
+    "joinButton": "Kulübe Katıl",
+    "learnMore": "Daha Fazla"
+  },
+  "clubs": {
+    "title": "Kulüplerimiz",
+    "subtitle": "22 öğrenci kulübü seni bekliyor",
+    "searchPlaceholder": "Kulüp ara...",
+    "filter": {
+      "all": "Tümü",
+      "culture": "Kültür",
+      "sport": "Spor",
+      "science": "Bilim",
+      "volunteer": "Gönüllülük",
+      "business": "İşletme"
+    },
+    "members": "üyeler",
+    "viewDetails": "Detaylar"
+  },
+  "footer": {
+    "about": "Hakkımızda",
+    "social": "Sosyal Medya",
+    "contact": "İletişim",
+    "rights": "Tüm hakları saklıdır"
+  }
+}

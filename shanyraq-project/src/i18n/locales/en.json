@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Home",
+    "clubs": "Clubs",
+    "calendar": "Calendar",
+    "media": "Media",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "HKTU Student Clubs",
+    "subtitle": "One Roof - Many Clubs",
+    "description": "Uniting all student clubs on one platform to promote their activities",
+    "joinButton": "Join a Club",
+    "learnMore": "Learn More"
+  },
+  "clubs": {
+    "title": "Our Clubs",
+    "subtitle": "22 student clubs are waiting for you",
+    "searchPlaceholder": "Search for a club...",
+    "filter": {
+      "all": "All",
+      "culture": "Culture",
+      "sport": "Sport",
+      "science": "Science",
+      "volunteer": "Volunteer",
+      "business": "Business"
+    },
+    "members": "members",
+    "viewDetails": "View Details"
+  },
+  "footer": {
+    "about": "About Us",
+    "social": "Social Media",
+    "contact": "Contact",
+    "rights": "All rights reserved"
+  }
+}
