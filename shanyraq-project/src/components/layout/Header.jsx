@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { FaGlobe } from 'react-icons/fa';
@@ -35,13 +35,11 @@ const Header = () => {
 
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center p-2 shadow-lg">
-              <img
-                src={logo}
-                alt="Shanyraq Logo"
-                className="w-full h-full object-contain"
-              />
-            </div>
+            <img
+              src={logo}
+              alt="Shanyraq Logo"
+              className="w-14 h-14 object-contain"
+            />
             <div className="hidden md:block">
               <h1 className="text-xl font-heading font-bold text-accent">Shanyraq</h1>
               <p className="text-xs text-text-secondary">Student Clubs</p>

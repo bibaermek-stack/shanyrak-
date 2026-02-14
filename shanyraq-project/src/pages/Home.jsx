@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import Button from '../components/common/Button';
@@ -25,13 +25,11 @@ const Home = () => {
         </div>
 
         <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="w-32 h-32 md:w-40 md:h-40 bg-white rounded-full flex items-center justify-center p-6 md:p-8 shadow-2xl mx-auto mb-6">
-            <img
-              src={logo}
-              alt="Shanyraq Logo"
-              className="w-full h-full object-contain"
-            />
-          </div>
+          <img
+            src={logo}
+            alt="Shanyraq Logo"
+            className="w-32 h-32 md:w-40 md:h-40 object-contain mx-auto mb-6"
+          />
           <h1 className="text-4xl md:text-6xl font-heading font-bold text-text-primary mb-4">
             {t('home.title')}
           </h1>
@@ -108,10 +106,7 @@ const Home = () => {
                 className="p-6 cursor-pointer"
                 onClick={() => navigate(`/clubs/${club.id}`)}
               >
-                <div
-                  className="w-full h-32 flex items-center justify-center mb-4 rounded-lg p-4"
-                  style={{ backgroundColor: club.color + '20' }}
-                >
+                <div className="w-full h-32 flex items-center justify-center mb-4">
                   <img
                     src={club.logo}
                     alt={club.name[lang]}

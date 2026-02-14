@@ -1,0 +1,68 @@
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2m22:47:21[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\src\pages\ClubDetail.jsx: Unexpected token, expected ":" (132:13)
+
+[0m [90m 130 |[31m                 )}
+ [90m 131 |[31m               [33m<[31m[33m/[31m[33m>[31m
+[31m[1m>[22m[31m[90m 132 |[31m             )) [33m:[31m (
+ [90m     |[31m              [31m[1m^[22m[31m
+ [90m 133 |[31m               [33m<[31m[33mp[31m className[33m=[31m[32m"text-text-secondary italic"[31m[33m>[31m
+ [90m 134 |[31m                 {lang [33m===[31m [32m'kk'[31m [33m?[31m [32m'Ережелер жасалуда...'[31m [33m:[31m lang [33m===[31m [32m'tr'[31m [33m?[31m [32m'Kurallar hazırlanıyor...'[31m [33m:[31m [32m'Rules coming soon...'[31m}
+ [90m 135 |[31m               [33m<[31m[33m/[31m[33mp[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/MECHREVO/OneDrive/Документы/GitHub/shanyrak-/shanyraq-project/src/pages/ClubDetail.jsx[39m:132:13
+[33m  132 |              )) : (
+  133 |                <p className="text-text-secondary italic">
+  134 |                  {lang === 'kk' ? 'Ережелер жасалуда...' : lang === 'tr' ? 'Kurallar hazırlanıyor...' : 'Rules coming ...
+      |                                        ^
+  135 |                </p>
+  136 |              )}[39m
+      at constructor (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:367:19)
+      at JSXParserMixin.raise (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:6624:19)
+      at JSXParserMixin.unexpected (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:6644:16)
+      at JSXParserMixin.expect (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:6924:12)
+      at JSXParserMixin.parseConditional (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10956:12)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10949:17)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10895:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10848:23)
+      at C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10844:39
+      at JSXParserMixin.allowInAnd (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:12500:12)
+      at JSXParserMixin.parseExpression (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10844:17)
+      at JSXParserMixin.jsxParseExpressionContainer (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:4661:31)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:4740:36)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:4727:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:4727:32)
+      at JSXParserMixin.jsxParseElementAt (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:4727:32)
+      at JSXParserMixin.jsxParseElement (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:4778:17)
+      at JSXParserMixin.parseExprAtom (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:4788:19)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:11145:23)
+      at JSXParserMixin.parseUpdate (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:11130:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:11110:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10963:61)
+      at JSXParserMixin.parseExprOps (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10968:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10945:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10895:21)
+      at C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10864:39
+      at JSXParserMixin.allowInAnd (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:12500:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10864:17)
+      at JSXParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:12567:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:11747:28)
+      at JSXParserMixin.parseExprAtom (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:11395:23)
+      at JSXParserMixin.parseExprAtom (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:4793:20)
+      at JSXParserMixin.parseExprSubscripts (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:11145:23)
+      at JSXParserMixin.parseUpdate (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:11130:21)
+      at JSXParserMixin.parseMaybeUnary (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:11110:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10963:61)
+      at JSXParserMixin.parseExprOps (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10968:23)
+      at JSXParserMixin.parseMaybeConditional (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10945:23)
+      at JSXParserMixin.parseMaybeAssign (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10895:21)
+      at JSXParserMixin.parseExpressionBase (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10848:23)
+      at C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10844:39
+      at JSXParserMixin.allowInAnd (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:12495:16)
+      at JSXParserMixin.parseExpression (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:10844:17)
+      at JSXParserMixin.parseReturnStatement (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:13218:28)
+      at JSXParserMixin.parseStatementContent (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:12874:21)
+      at JSXParserMixin.parseStatementLike (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:12843:17)
+      at JSXParserMixin.parseStatementListItem (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:12823:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:13392:61)
+      at JSXParserMixin.parseBlockBody (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:13385:10)
+      at JSXParserMixin.parseBlock (C:\Users\MECHREVO\OneDrive\Документы\GitHub\shanyrak-\shanyraq-project\node_modules\@babel\parser\lib\index.js:13373:10)

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaTelegram } from 'react-icons/fa';
 import logo from '../../assets/images/shanyrak_logo-round.png';
@@ -21,13 +21,11 @@ const Footer = () => {
         {/* Shanyraq логотипі */}
         <div className="text-center mb-8">
           <div className="inline-block">
-            <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center p-4 shadow-xl mx-auto mb-4">
-              <img
-                src={logo}
-                alt="Shanyraq Logo"
-                className="w-full h-full object-contain"
-              />
-            </div>
+            <img
+              src={logo}
+              alt="Shanyraq Logo"
+              className="w-24 h-24 object-contain mx-auto mb-4"
+            />
             <h3 className="text-2xl font-heading font-bold text-accent mb-2">Shanyraq</h3>
             <p className="text-text-secondary">Бір шаңырақ - көп клубтар</p>
           </div>

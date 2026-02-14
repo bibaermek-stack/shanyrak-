@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { clubs } from '../data/clubs';
@@ -9,6 +9,7 @@ const ClubDetail = () => {
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
+  const [showAllRules, setShowAllRules] = useState(false);
 
   const club = clubs.find(c => c.id === parseInt(id));
 
@@ -45,16 +46,11 @@ const ClubDetail = () => {
         {/* Header with Logo */}
         <div className="bg-primary-light rounded-2xl p-8 mb-8 border border-accent/30">
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div
-              className="w-32 h-32 rounded-full flex items-center justify-center p-6 shadow-xl"
-              style={{ backgroundColor: club.color }}
-            >
-              <img
-                src={club.logo}
-                alt={club.name[lang]}
-                className="w-full h-full object-contain"
-              />
-            </div>
+            <img
+              src={club.logo}
+              alt={club.name[lang]}
+              className="w-32 h-32 object-contain"
+            />
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-4xl font-heading font-bold text-accent mb-4">
                 {club.name[lang]}
@@ -112,14 +108,27 @@ const ClubDetail = () => {
               {lang === 'kk' ? 'Клуб ережелері' : lang === 'tr' ? 'Kulüp Kuralları' : 'Club Rules'}
             </h2>
             {club.rules ? (
-              <ul className="space-y-3">
-                {club.rules[lang].map((rule, index) => (
-                  <li key={index} className="flex items-start gap-3 text-text-primary">
-                    <span className="text-accent font-bold">{index + 1}.</span>
-                    <span>{rule}</span>
-                  </li>
-                ))}
-              </ul>
+              <>
+                <ul className="space-y-3">
+                  {(showAllRules ? club.rules[lang] : club.rules[lang].slice(0, 5)).map((rule, index) => (
+                    <li key={index} className="flex items-start gap-3 text-text-primary">
+                      <span className="text-accent font-bold">{index + 1}.</span>
+                      <span>{rule}</span>
+                    </li>
+                  ))}
+                </ul>
+                {club.rules[lang].length > 5 && (
+                  <button
+                    type="button"
+                    onClick={() => setShowAllRules((prev) => !prev)}
+                    className="mt-4 text-accent hover:text-accent/80 transition-colors font-medium"
+                  >
+                    {showAllRules
+                      ? (lang === 'kk' ? 'Қысқаша көрсету' : lang === 'tr' ? 'Daha az göster' : 'Show less')
+                      : (lang === 'kk' ? 'Толығырақ' : lang === 'tr' ? 'Daha fazla' : 'Show more')}
+                  </button>
+                )}
+              </>
             ) : (
               <p className="text-text-secondary italic">
                 {lang === 'kk' ? 'Ережелер жасалуда...' : lang === 'tr' ? 'Kurallar hazırlanıyor...' : 'Rules coming soon...'}
@@ -182,3 +191,6 @@ const ClubDetail = () => {
 };
 
 export default ClubDetail;
+
+
+

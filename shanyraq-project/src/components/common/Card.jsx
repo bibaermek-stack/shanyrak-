@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 const Card = ({
   children,
@@ -21,14 +21,11 @@ const Card = ({
 export const ClubCard = ({ club, language = 'kk', onClick }) => {
   return (
     <Card hover premium className="p-6 cursor-pointer">
-      <div
-        className="w-full h-32 flex items-center justify-center mb-4 rounded-lg overflow-hidden"
-        style={{ backgroundColor: club.color + '20' }}
-      >
+      <div className="w-full h-32 flex items-center justify-center mb-4">
         <img
           src={club.logo}
           alt={club.name[language]}
-          className="w-full h-full object-contain p-2"
+          className="w-full h-full object-contain"
         />
       </div>
 
