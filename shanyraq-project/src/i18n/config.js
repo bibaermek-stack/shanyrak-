@@ -18,5 +18,8 @@ i18n
       escapeValue: false,
     },
   });
+// Force default language to English for now
+i18n.changeLanguage('en');
+i18n.options.fallbackLng = 'en';
 
 export default i18n;

@@ -44,7 +44,7 @@ const Header = () => {
             </div>
             <div className="hidden md:block">
               <h1 className="text-xl font-heading font-bold text-accent">Shanyraq</h1>
-              <p className="text-xs text-text-secondary">ХҚТУ Клубтары</p>
+              <p className="text-xs text-text-secondary">Student Clubs</p>
             </div>
           </Link>
 
@@ -124,3 +124,4 @@ const Header = () => {
 };
 
 export default Header;
+
