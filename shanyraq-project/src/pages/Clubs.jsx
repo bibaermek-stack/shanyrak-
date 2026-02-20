@@ -1,8 +1,7 @@
-﻿import React, { useState } from 'react';
+﻿import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { ClubCard } from '../components/common/Card';
-import { clubs, categories } from '../data/clubs';
 import { FaSearch } from 'react-icons/fa';
 
 const Clubs = () => {
@@ -12,14 +11,30 @@ const Clubs = () => {
 
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
+  const [clubs, setClubs] = useState([]);
+  const [categories, setCategories] = useState([]);
 
-  // Фильтрация клубов
-  const filteredClubs = clubs.filter((club) => {
-    const matchesCategory = selectedCategory === 'all' || club.category === selectedCategory;
-    const matchesSearch = club.name[lang].toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          club.description[lang].toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
-  });
+  useEffect(() => {
+    let mounted = true;
+    import('../data/clubs').then((m) => {
+      if (!mounted) return;
+      setClubs(m.clubs);
+      setCategories(m.categories);
+    });
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  const filteredClubs = useMemo(() => {
+    return clubs.filter((club) => {
+      const matchesCategory = selectedCategory === 'all' || club.category === selectedCategory;
+      const matchesSearch = club.name[lang].toLowerCase().includes(searchQuery.toLowerCase()) ||
+                            club.description[lang].toLowerCase().includes(searchQuery.toLowerCase());
+      return matchesCategory && matchesSearch;
+    });
+  }, [clubs, selectedCategory, searchQuery, lang]);
 
   return (
     <div className="min-h-screen py-12">

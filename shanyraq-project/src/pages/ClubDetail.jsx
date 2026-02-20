@@ -1,17 +1,39 @@
-﻿import React, { useState } from 'react';
+﻿import React, { useEffect, useMemo, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { clubs } from '../data/clubs';
 import { FaInstagram, FaUsers, FaUserTie, FaChalkboardTeacher, FaArrowLeft } from 'react-icons/fa';
 
 const ClubDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const lang = i18n.language;
   const [showAllRules, setShowAllRules] = useState(false);
+  const [clubs, setClubs] = useState(null);
 
-  const club = clubs.find(c => c.id === parseInt(id));
+  useEffect(() => {
+    let mounted = true;
+    import('../data/clubs').then((m) => {
+      if (mounted) setClubs(m.clubs);
+    });
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
+  const club = useMemo(() => {
+    if (!clubs) return null;
+    return clubs.find((c) => c.id === parseInt(id, 10));
+  }, [clubs, id]);
+
+  if (!clubs) {
+    return (
+      <div className="min-h-screen flex items-center justify-center text-text-secondary">
+        Loading...
+      </div>
+    );
+  }
 
   if (!club) {
     return (
@@ -59,10 +81,6 @@ const ClubDetail = () => {
                 {club.description[lang]}
               </p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                <div className="flex items-center gap-2 text-text-primary">
-                  <FaUsers className="text-accent" />
-                  <span>{club.members} {lang === 'kk' ? 'мүше' : lang === 'tr' ? 'üye' : 'members'}</span>
-                </div>
                 <div className="flex items-center gap-2 text-text-primary">
                   <FaUserTie className="text-accent" />
                   <span>{lang === 'kk' ? 'Төраға' : lang === 'tr' ? 'Başkan' : 'President'}: {club.president}</span>
@@ -191,6 +209,3 @@ const ClubDetail = () => {
 };
 
 export default ClubDetail;
-
-
-

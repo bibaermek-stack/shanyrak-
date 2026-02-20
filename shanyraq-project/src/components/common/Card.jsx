@@ -37,10 +37,7 @@ export const ClubCard = ({ club, language = 'kk', onClick }) => {
         {club.description[language]}
       </p>
 
-      <div className="flex items-center justify-between text-sm">
-        <span className="text-text-secondary">
-          {club.members} мүшелер
-        </span>
+      <div className="text-sm">
         <span className="text-accent hover:text-accent-light">
           Толығырақ →
         </span>

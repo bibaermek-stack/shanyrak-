@@ -1,15 +1,26 @@
-﻿import React from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import Button from '../components/common/Button';
 import Card from '../components/common/Card';
-import { clubs } from '../data/clubs';
 import logo from '../assets/images/shanyrak_logo-round.png';
 
 const Home = () => {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const lang = i18n.language;
+  const [clubs, setClubs] = useState([]);
+
+  useEffect(() => {
+    let mounted = true;
+    import('../data/clubs').then((m) => {
+      if (mounted) setClubs(m.clubs);
+    });
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   // Соңғы 6 клубты көрсету
   const featuredClubs = clubs.slice(0, 6);
@@ -122,10 +133,7 @@ const Home = () => {
                   {club.description[lang]}
                 </p>
 
-                <div className="flex items-center justify-between text-sm">
-                  <span className="text-text-secondary">
-                    {club.members} {t('clubs.members')}
-                  </span>
+                <div className="text-sm">
                   <span className="text-accent hover:text-accent-light">
                     {t('clubs.viewDetails')} →
                   </span>
