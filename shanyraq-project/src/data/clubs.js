@@ -13,7 +13,7 @@
     supervisor: "Әскербекова Айдана",
     logo: "/logos/yasawi-dc.png",
     color: "#3498DB",
-    instagram: "https://instagram.com/yasawi_dc",
+    instagram: "https://www.instagram.com/yasawi_debate_club?igsh=MXhleXVmZHcxYWt2YQ==",
     presidentPhoto: "/photos/presidents/yasawi-dc-president.jpg",
     teamPhoto: "/photos/teams/yasawi-dc-team.jpg",
     fullDescription: {
@@ -155,7 +155,7 @@
     supervisor: "Эргаштаев Шохзод",
     logo: "/logos/enactus.png",
     color: "#FFD700",
-    instagram: "https://instagram.com/enactus_yasawi",
+    instagram: "https://www.instagram.com/encts_yasawi?igsh=Z3BtcGRsMzN1N2hh",
     presidentPhoto: "/photos/presidents/enactus-president.jpg",
     teamPhoto: "/photos/teams/enactus-team.jpg",
     fullDescription: {
@@ -297,6 +297,7 @@
     supervisor: "Достай Ерғали",
     logo: "/logos/ksa.png",
     color: "#1E88E5",
+    instagram: "https://www.instagram.com/yasawi_qsa?igsh=em45cWl4ejhjbmRw",
     rules: {
       kk: [
         "I. Жалпы ережелер",
@@ -429,6 +430,8 @@
     supervisor: "Гүлдана Қазтай",
     logo: "/logos/yassawi-media.png",
     color: "#E74C3C",
+    instagram: "https://www.instagram.com/lc_kazmsa_yasawi?igsh=MTg0M252ODMxbTVvOA==",
+    instagram: "https://www.instagram.com/yasawi.media.club?igsh=MWxsczZneTJseXZxMQ%3D%3D",
     rules: {
       kk: [
         "I. Жалпы ережелер",
@@ -564,6 +567,7 @@
     supervisor: "Достай Ерғали",
     logo: "/logos/youth-spirit.png",
     color: "#9B59B6",
+    instagram: "https://www.instagram.com/yasawi_jastarruhy?igsh=ZXk4eWZhbW1kMmw1",
     rules: {
       kk: [
         "I. Жалпы ережелер",
@@ -696,6 +700,7 @@
     supervisor: "Татыкаева Угилжан",
     logo: "/logos/das.png",
     color: "#2ECC71",
+    instagram: "https://www.instagram.com/yasawi_das?igsh=MWI1NzhyYWp6dzFxMQ==",
     rules: {
       kk: [
         "I. Жалпы ережелер",
@@ -1101,6 +1106,7 @@
     supervisor: "Қаржау Құралай",
     logo: "/logos/volunteer.png",
     color: "#16A085",
+    instagram: "https://www.instagram.com/yasawi.green.growth?igsh=bnc2OGdtb21jbmVj",
     rules: {
       kk: [
         "I. Жалпы ережелер",
@@ -1233,6 +1239,7 @@
     supervisor: "Құралай Қаржау",
     logo: "/logos/yasawi-team.png",
     color: "#F39C12",
+    instagram: "https://www.instagram.com/yasawi_team?igsh=MXA3NGh5c2Roc25sZQ==",
     rules: {
       kk: [
         "I. Жалпы ережелер",
@@ -1368,6 +1375,7 @@
     supervisor: "Мендіғани Жүсіпбаев",
     logo: "/logos/art-house.png",
     color: "#E67E22",
+    instagram: "https://www.instagram.com/yasawi_art_house?igsh=cG9ubjBhZnFkYTg1",
     rules: {
       kk: [
         "I. Жалпы ережелер",
@@ -1501,6 +1509,7 @@
     supervisor: "Әскербекова Айдана",
     logo: "/logos/event.png",
     color: "#8E44AD",
+    instagram: "https://www.instagram.com/yasawi.event.club?igsh=OWN4ZWgzY3NuMXhy",
     rules: {
       kk: [
         "I. Жалпы ережелер",
@@ -1767,6 +1776,7 @@
     supervisor: "Исмаилов Алишер",
     logo: "/logos/orda.png",
     color: "#C0392B",
+    instagram: "https://www.instagram.com/yasawi_orda_club?igsh=OHFveHF0cWRzZW15",
     rules: {
       kk: [
         "I. Жалпы ережелер",
@@ -2148,6 +2158,7 @@
     supervisor: "Бушра ЙЫЛДЫЗ",
     logo: "/logos/turkic-world.png",
     color: "#D35400",
+    instagram: "https://www.instagram.com/yasawi_turkdunya.club?igsh=dnd2cXEwbnpjODV2",
     rules: {
       kk: [
         "I. Жалпы ережелер",
@@ -2277,6 +2288,7 @@
     supervisor: "Балғабаев Еркебұлан",
     logo: "/logos/nomad.png",
     color: "#16A085",
+    instagram: "https://www.instagram.com/yasawi_nomadvibes?igsh=MTMzNm53MTRoNHBkZQ==",
     rules: {
       kk: [
         "I. Жалпы ережелер",
@@ -2409,6 +2421,7 @@
     supervisor: "Қуанышбаева Шолпан",
     logo: "/logos/ruhaniyat.png",
     color: "#9B59B6",
+    instagram: "https://www.instagram.com/rukhaniyat_yasawi?igsh=bXAzenN1aTdxbWxx",
     rules: {
       kk: [
         "I. Жалпы ережелер",
@@ -2538,6 +2551,7 @@
     supervisor: "Бушра ЙЫЛДЫЗ",
     logo: "/logos/turcology.png",
     color: "#E91E63",
+    instagram: "https://www.instagram.com/yasawi_turkology.club?igsh=MWVkbXJmbWEzdG51NA==",
     rules: {
       kk: [
         "I. Жалпы ережелер",
@@ -2666,7 +2680,8 @@
     members: 33,
     supervisor: "Студенттік комитет",
     logo: "/logos/voters.png",
-    color: "#34495E"
+    color: "#34495E",
+    instagram: "https://www.instagram.com/yasawi_jas_sailaushylar?igsh=MWk2d2ZpZDc3MWt5bA=="
   },
   {
     id: 22,
@@ -2682,6 +2697,7 @@
     supervisor: "Ғылыми бөлім",
     logo: "/logos/stem.png",
     color: "#1ABC9C",
+    instagram: "https://www.instagram.com/yasawi_stem_ayu?igsh=MXFkeTIxb3BqMzdxMQ==",
     rules: {
       kk: [
         "I. Жалпы ережелер",
