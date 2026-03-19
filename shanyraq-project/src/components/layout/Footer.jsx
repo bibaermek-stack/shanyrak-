@@ -9,7 +9,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: FaFacebook, url: 'https://facebook.com', label: 'Facebook' },
-    { icon: FaInstagram, url: 'https://instagram.com', label: 'Instagram' },
+    { icon: FaInstagram, url: 'https://www.instagram.com/yasawi.shanyrak?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', label: 'Instagram' },
     { icon: FaTwitter, url: 'https://twitter.com', label: 'Twitter' },
     { icon: FaYoutube, url: 'https://youtube.com', label: 'YouTube' },
     { icon: FaTelegram, url: 'https://t.me', label: 'Telegram' }
